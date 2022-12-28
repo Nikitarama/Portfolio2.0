@@ -52,3 +52,6 @@ function del(){
 function calculate(){
     calDisplay.innerHTML = eval(scrDisplay.innerText);
 }
+
+
+
