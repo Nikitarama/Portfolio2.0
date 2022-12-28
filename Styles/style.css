@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=DM+Serif+Display:ital@1&family=Lobster&family=Silkscreen&display=swap');
 
 body {
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     background-image: url(../img/greenpixelcity.png);
     background-position: center;
@@ -15,6 +17,7 @@ a {
 }
 
 .topnav a {
+    margin: 0;
     color: lime;
     padding:20px;
     text-decoration:none;
@@ -22,6 +25,7 @@ a {
     font-family: 'Space Mono', monospace;
     letter-spacing: 2px;
     margin-left: 60px;
+    
 }
 
 .topnav {
@@ -32,6 +36,8 @@ a {
     box-sizing: border-box;
     background-color: black;
     width: 1364px;
+    z-index: 2;
+    margin-top: -9px;
 }
 
 .topnav a:hover {
@@ -40,12 +46,139 @@ a {
     text-decoration: none;
 }
 
+.social-icons {
+    margin:0;
+    padding:0;
+    
+}
+
+.social-icons i{
+    margin:0;
+    padding:0;
+    display: inline-flexbox; 
+    
+}
+
+.social-icons a {
+    text-decoration: none;
+    color:rgba(255,255,255,0.5);
+    
+}
+
+.social-icons:hover a {
+    text-decoration: none;
+} 
+
+.social-icons ul {
+    margin:10px;
+    padding:100px;
+    margin-bottom: -210px;
+    margin-left: 220px;
+}
+
+.social-icons ul li {
+    list-style: none;
+    padding:0;
+    position: relative;
+    display: flexbox;
+    color:#666;
+    font-size: 25px;
+    height:51px;
+    width:51px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    line-height:50px;
+    border-radius: 10%;
+    /*space between icons*/
+    margin:10px;
+    
+    cursor:pointer;
+}
+
+.social-icons ul li:before {
+    margin:0;
+    padding:0;
+    position:relative;
+    top:0;
+    left:0;
+    text-align: center;
+    border-radius:50%;
+    
+    transform:scale(0.9);
+    transition: .5s;
+}
+
+ul li:nth-child(1):before {
+    background:rgba(0,0,0,0.5);
+}
+
+ul li:nth-child(2):before {
+    background:rgba(0,0,0,0.5)
+}
+
+ul li:nth-child(3):before {
+    background:rgba(0,0,0,0.5)
+}
+
+ul li:nth-child(4):before {
+    background:rgba(0,0,0,0.5);
+}
+
+ul li:hover:before {
+    position:relative;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    text-align: center;
+    border-radius:50%;
+    
+    transform:scale(0);
+    transition:0;
+}
+
+ul li:hover {
+    translate:calc(50% 50%);
+    transform:scale(1.1);
+    
+}
+
+.social-icons ul li:nth-child(1):hover {
+    
+    color:rgb(78, 211, 255);
+    box-shadow: 0 0 10px rgb(78, 211, 255);
+    text-shadow: 0 0 5px rgb(78, 211, 255);
+    background-color: black;
+}
+
+.social-icons ul li:nth-child(2):hover {
+    color:blue;
+    box-shadow: 0 0 10px blue;
+    text-shadow: 0 0 5px blue;
+    background-color: black;
+}
+
+.social-icons ul li:nth-child(3):hover {
+    color:rgb(245, 119, 188);
+    box-shadow: 0 0 10px rgb(245, 119, 188);
+    text-shadow: 0 0 5px rgb(245, 119, 188);
+    background-color: black;
+}
+
+.social-icons ul li:nth-child(4):hover {
+    color:rgb(184, 3, 184);
+    box-shadow: 0 0 10px rgb(184, 3, 184);
+    text-shadow: 0 0 5px rgb(184, 3, 184);
+    background-color: black;
+}
+
+
 .aboutMe {
     padding: 30px;
     margin-left: 25rem;
-    margin-top: 100px;
+    margin-top: -140px;
     display:inline-block;
-    width: 590px;
+    width: 600px;
     height: 440px;
     border-radius: 20px;
 }
@@ -59,6 +192,7 @@ a {
 
 .aboutMe, h1 {
     font-size: 40px;
+    font-family: 'Space Mono', monospace;
 }
 
 .aboutMe img {
@@ -71,12 +205,12 @@ a {
 }
 
 .hobbies {
-    margin-top: 100px;
+    margin-top: 120px;
     height: 100vh;
 }
 
 .hobbies .row {
-    margin-top: 150px;
+    margin-top: 80px;
     margin-left: 10rem;
     
 }
@@ -128,4 +262,309 @@ a {
     color: rgb(238, 105, 238);
     transform: rotateY(180deg);
     height: 300px;
+    padding: 10px;
   }
+
+  .flip-card-back h1 {
+    border:3px solid lime;
+    padding: 5px;
+  }
+
+#projects {
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: -60px;
+}
+
+.carousel {
+   
+    margin: 150px;
+    display: inline-block;
+    width: 1000px;
+    height: 500px;
+}
+
+.carousel h5 {
+    margin-top: 40px;
+}
+
+ #modal{
+    margin-bottom: -200px;
+    width: 150px;
+    margin-left: -700px; 
+    font-weight: bold;
+    height: 70px;
+}
+
+.projects .modal-body, .modal-content {
+    background: black;
+    color: lime;
+    font-family: 'Space Mono', monospace;
+    
+}
+
+#exampleInputText1 {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+
+.carousel-indicators button {
+    margin-bottom: 4px;
+    margin-left: 100px;
+    
+}
+
+
+.calculator {
+    margin: 100px;
+    padding:30px;
+    background: linear-gradient(to left, pink, salmon);
+    box-shadow: 0 0 20px black;
+    justify-content: center;
+    width: 400px;
+    border-radius: 50px;
+    font-family: 'VT323', monospace;
+    font-weight: bold;
+} 
+
+.calculator button:hover {
+    background-color: palevioletred;
+    border-top: 1px solid palevioletred;
+    border-left: 1px solid palevioletred;
+    border-bottom: 1px solid palevioletred;
+    border-right: 1px solid palevioletred;
+    box-shadow: 0 0 5px black;
+    transition: 0.3s ease-in-out;
+    color:white;
+}
+
+.calculator button{
+    border-radius: 60px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+
+#btn {
+    background:rgb(253, 6, 171);
+    width:110px;
+    border:rgb(253, 6, 171);
+}
+
+#btn:hover {
+    background-color: salmon;
+}
+
+.output {
+    overflow: hidden;
+    background:white;
+    height:100px;
+    border-radius: 10px;
+}
+
+.scrDisplay {
+    text-align: right;
+    margin: 0;
+    word-wrap:break-word;
+    word-break: break-all;
+   
+}
+
+.calDisplay {
+    font-size: 30px;
+    margin: 0;
+    text-align: right;
+    word-wrap:break-word;
+    word-break: break-all;
+}
+
+#education {
+    margin:0;
+    padding:0;
+    display: inline-flexbox;
+    align-items: flex-start;
+    gap:50px;
+    font-family: 'VT323', monospace;
+}
+
+#education p {
+    border:px solid black;
+    color: #fff;
+    width:300px;
+    height: 150px;
+}
+
+
+#education .card {
+    margin: 25px;
+    margin-left: 65px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 350px;
+    height:400px;
+}
+
+
+#education .card-title{
+    color: #9DB5B2;
+    font-size: 18px;
+    width:200px;
+    height:50px;
+    letter-spacing: 1px;
+}
+
+#education h2 {
+    margin:0 ;
+    border-bottom: px solid #877666;
+    color: #666;
+    font-weight: bold;
+    
+}
+
+#bootstrap-logo {
+    margin: 10px;
+    margin-left: -30px;
+    
+}
+
+#bootstrap-logo h3 {
+    margin-left: 30px;
+}
+
+#skills {
+    margin: 0px;
+    background: rgba(0,0,0,0.7);
+    
+}
+
+#skills .col-md-6 {
+    border:#9DB5B2;
+
+}
+#skills .row {
+    margin: 0;
+    margin-left: -50px;
+    margin-right: -20px;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#skills #skillCard {
+    
+    background:rgba(0, 0, 0, 0.0);
+    border:px solid #fff;
+   justify-content: space-around;
+   
+}
+
+#testimonials .card img {
+    width:150px;
+    height:400px;
+    overflow:hidden;
+    border-radius: 3px;
+}
+
+#testimonials .card-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+footer{
+    background-color: #111010;
+}
+.f-item-con{
+    padding: 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
+}
+footer .app-name{
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+.app-name .app-initial{
+    color: var(--theme-col);
+}
+footer .app-info p{
+    color: white;
+    padding-left: 1.65rem;
+}
+
+footer .footer-title{ 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+    border-left: 4px solid var(--theme-col);
+    padding-left: 1.5rem;
+    height: fit-content;
+}
+.useful-links ul{ 
+    padding-left: 0.75rem;
+    color: white;
+    font-size: 0.5rem/* 14px */;
+    line-height: 1.25rem;
+    margin-top: .5rem;
+}
+.useful-links ul li{ 
+    margin: .2rem 0;
+    cursor: pointer;
+    color: #d4d4d4;
+    width: fit-content;
+}
+.useful-links ul li:hover{
+    color: white;
+}
+footer .help-sec{
+    grid-column-start: 1;
+}
+footer .cr-con{
+    background-color: #232127;
+    color: white;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+.g-i-t{
+    display: grid;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.g-i-t form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+form .g-inp{
+    padding: .25rem .5rem;
+    font-size: 16px;
+}
+.g-inp textarea{
+    height: 150px;
+}
+
+ -btn .useful-links{
+    padding: .25rem 1rem;
+    background-color: var(--theme-col);
+    border-radius: .25rem;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+

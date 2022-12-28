@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./Styles/style.css" />
+    <script src="./Scripts/script.js" defer></script>
     
     <link
       href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
@@ -39,14 +40,34 @@
 
         </header>
 
+        <section class="social-icons">
+          
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          
+        </section>
+
         <section class="aboutMe col-8">
+          
             <img src="./img/nikita instg.jpg"><h1><span class="word"></span></h1>
         
             <h4> and I'm an aspiring web developer.</h4>
 
         </section>
 
-        <section class="hobbies">
+      <section class="hobbies">
                 <h1>My hobbies:</h1>
             <div class="row container-fluid">
                 <div class="flip-card col-sm-3">
@@ -92,8 +113,441 @@
                     </div>
                   </div>
             </div>
-        </section>
+      </section>
+
+    <section id="projects">
+            <h1>My past projects:</h1>
+            <br>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/2022-12-27.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>An e-commerce site for vintage cars</h5>
+                      <p>Check it out by pressing right <button><a href="https://papaya-piroshki-6e1f7d.netlify.app">here</a></button></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/2022-12-27 (2).png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>My first Portfolio</h5>
+                      <p>Check it out by pressing right <button><a href="https://nikita-work-profile.netlify.app">here</a></button></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/2022-12-27 (1).png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>A calculator</h5>
+                      <p>Check it out by pressing right <button><a href="https://stately-narwhal-b20252.netlify.app">here</a></button></p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <button type="button" class="btn btn-warning" id="modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Leave a comment!!!
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputText" class="form-label">Comments</label>
+                              <input type="text" class="form-control" id="exampleInputText1">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">If you want to be notified in future</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        
+          
+      <div class="calculator mx-auto text-center">
+
+            <div class="row mb-3 output">
+
+              <div class="row scrDisplay" id="scrDisplay"></div>
+
+              <div class="row calDisplay" id="calDisplay"></div>
+          
+            </div>
+
+          <div class="row buttons">
+
+            <div class="row">
+
+              <div class="col m-2">
+
+                  <button onClick="display('1')" class="button">1</button>
+                  <button onClick="display('2')" class="button">2</button>
+                  <button onClick="display('3')" class="button">3</button>
+                  <button onClick="allClear()" id="btn">AC</button>
+
+
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col m-2">
+                  <button onClick="display('4')" class="button">4</button>
+                  <button onClick="display('5')" class="button">5</button>
+                  <button onClick="display('6')" class="button">6</button>
+                  <button onClick="calculate()" id="btn">=</button>
+                  
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col m-2">
+                  <button onClick="display('7')" class="button">7</button>
+                  <button onClick="display('8')" class="button">8</button>
+                  <button onClick="display('9')" class="button">9</button>
+                  <button onClick="display('0')" class="button">0</button>
+                  <button onClick="display('-')" id="operator" class="button">-</button>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col m-2">
+                  <button onClick="del()" id="operator" class="button">C</button>
+                  <button onClick="display('.')" id="decimal" class="button">.</button>
+                  <button onClick="display('*')" id="operator" class="button">*</button>
+                  <button onClick="display('/')" id="operator" class="button">/</button>
+                  <button onClick="display('+')" id="operator" class="button">+</button>
+              </div>
+
+            </div>
+        </div>
+
+      </div>
+      <br>
+    </section>
     
+
+  <section id="education">
+    <h1>Educational background:</h1>
+    <br>
+    <div class="row">
+        <div class="card mb-3">
+          <div class="row g-1">
+            <div class="col-md-4">
+              <div class="card-body">
+                <img
+                  src="./img/Plumstead-logo-254x300.jpg"
+                  class="img-fluid rounded-start"
+                  alt="Plumstead logo"
+                />
+                <h5 class="card-title">Plumstead High School</h5>
+                <p class="card-text">
+                  The subjects I did at high-school were: Business Studies, History and Geography.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">From 2010 - 2014</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" >
+          <div class="row g-1">
+            <div class="col-md-8">
+              <div class="card-body">
+                <img
+                  src="./img/UWC-logo_transparent-writing-1.svg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+                <h5 class="card-title">University of the Western Cape</h5>
+                <p class="card-text">
+                  At University I double majored with History and Psychology. 
+                  I thereafter obtained an Honours Degree in History, 
+                  as well as my Masters the following year.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">From 2015 - 2022</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" >
+          <div class="row g-1">
+            <div class="col-md-8">
+              <div class="card-body">
+                <img
+                  src="./img/LIFE-CHOICES-ACADEMY-LOGO-ON-BLUE-removebg-preview.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+                <h5 class="card-title">Life Choices Academy</h5>
+                <p class="card-text">
+                  I then joined the Life Choices bootcamp Academy
+                  where I learnt how to code professionally, as well as
+                  learning the basics of software and web development.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">From 2022 - 2023</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  <section class="skills" id="skills">
+      <h1>My skills:</h1>
+      <br>
+        <div class="row" style="margin-left: 9vh;">
+            <div class="col-md-6" id="skillCard" style="width: 30vh;">
+              <h3>HTML5</h3>
+          <svg viewBox="0 0 452 520">
+             <title>HTML5 Logo Badge</title>
+              <path
+               fill="RGB(227,79,38)"
+                d="M 41,460 L 0,0 451,0 410,460 225,512"
+              />
+              <path
+                fill="RGB(239,101,42)"
+                d="M 226,472 L 375,431 410,37 226,37"
+              />
+              <path
+                fill="RGB(236,237,238)"
+                d="M 226,208 L 151,208 146,150 226,150 226,94 84,94 99,265 226,265 z M 226,355 L162,338 158,293 102,293 109,382 226,414 z"
+              />
+              <path
+                fill="RGB(255,255,255)"
+                d="M 226,265 L 295,265 288,338 226,355 226,414 341,382 357,208 226,208 z M 226,94 L226,150 362,150 367,94 z"
+              />
+        </svg>
+            <div class="progress" style="width:80vh;">
+              <div class="progress-bar progress-bar-striped active bg-danger progress-bar-animated" role="progressbar"
+                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                80%
+              </div>
+            </div>
+      <br>
+    
+      <div class="col-md-6" id="skillCard" style="width: 30vh;">
+        <h3>CSS5</h3>
+        <svg viewBox="0 0 452 520">
+          <title>CSS3 Logo Badge</title>
+          <path
+            fill="RGB(12,115,184)"
+            d="M 41,460 L 0,0 451,0 410,460 225,512"
+          />
+          <path
+            fill="RGB(48,169,220)"
+            d="M 226,472 L 375,431 410,37 226,37"
+          />
+          <path
+            fill="RGB(236,237,238)"
+            d="M 226,208 L 94,208 99,265 226,265 z M 226,94 L 84,94 89,150 226,150 z M 226,355 L 102,322 109,382 226,414 z"
+          />
+          <path
+            fill="RGB(255,255,255)"
+            d="M 226,265 L 295,265 288,338 226,355 226,414 341,382 367,94 226,94 226,150 306,150 300,208 226,208 z"
+          />
+        </svg>
+        <div class="progress" style="width:80vh;">
+          <div class="progress-bar progress-bar-striped active bg-primary progress-bar-animated" role="progressbar"
+            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            70%
+          </div>
+        </div>
+      </div>
+        <br>
+    </div>
+        
+    <div class="row">
+      <div class="col-md-6" id="skillCard" style="width: 30vh;">
+        <h3>Javascript</h3>
+        <svg viewBox="0 0 452 520">
+          <title>Javascript Logo Badge</title>
+          <path
+            fill="RGB(229,162,40)"
+            d="M 0,0 L 451,0 410,460 225,512 41,460"
+          />
+          <path
+            fill="RGB(241,191,38)"
+            d="M 226,472 L375,431 410,37 226,37"
+          />
+          <path
+            fill="RGB(236,237,238)"
+            d="M 226,94 L 113,94 102,265 226,265 226,208 160,208 165,150 226,150 z M 226,355 L 162,338 158,293 102,293 109,382 226,414 z"
+          />
+          <path
+            fill="RGB(255,255,255)"
+            d="M 226,265 L 295,265 288,338 226,355 226,414 341,382 357,208 226,208 z M 226,94 L 339,94 357,180 301,180 293,150 226,150 z"
+          />
+        </svg>
+        <div class="progress" style="width:80vh;">
+          <div class="progress-bar progress-bar-striped active bg-warning progress-bar-animated" role="progressbar"
+          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+            50%
+          </div>
+      </div>
+        <br>
+        <div class="col-md-6" id="bootstrap-logo" id="skillCard" style="width: 30vh; margin-right:0px;">
+          <h3>Bootstrap</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" height="200px" viewBox="0 0 512 407.864" width="300px"><path d="m106.344 0c-29.214 0-50.831 25.57-49.863 53.3.929 26.641-.278 61.145-8.964 89.283-8.717 28.217-23.449 46.098-47.517 48.393v25.912c24.068 2.3 38.8 20.172 47.516 48.393 8.687 28.138 9.893 62.642 8.964 89.283-.968 27.726 20.649 53.3 49.868 53.3h299.347c29.214 0 50.827-25.57 49.859-53.3-.929-26.641.278-61.145 8.964-89.283 8.717-28.221 23.413-46.1 47.482-48.393v-25.912c-24.068-2.3-38.764-20.172-47.482-48.393-8.687-28.134-9.893-62.642-8.964-89.283.968-27.726-20.645-53.3-49.859-53.3h-299.355zm240.775 251.067c0 38.183-28.481 61.34-75.746 61.34h-80.458a8.678 8.678 0 0 1 -8.678-8.678v-199.593a8.678 8.678 0 0 1 8.678-8.678h80c39.411 0 65.276 21.348 65.276 54.124 0 23.005-17.4 43.6-39.567 47.208v1.2c30.176 3.31 50.495 24.21 50.495 53.077zm-84.519-128.1h-45.876v64.8h38.639c29.87 0 46.34-12.028 46.34-33.527-.003-20.148-14.163-31.273-39.103-31.273zm-45.876 90.511v71.411h47.564c31.1 0 47.573-12.479 47.573-35.931s-16.935-35.484-49.573-35.484h-45.564z" fill="#7952b3" fill-rule="evenodd"/></svg>
+      <br>
+      <br>  
+        <div class="progress" style="width:80vh; margin-left: 30px;">
+          <div class="progress-bar progress-bar-striped active bg-secondary progress-bar-animated" role="progressbar"
+            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+            75%
+          </div>
+        </div>
+    </div>      
+  </section>
+
+  <section id="testimonials">
+      
+    <h3>Testimonials</h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        <div class="col">
+          <div class="card">
+            <img src="./img/azeez.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Azeez Kemp</h5>
+              <p class="card-text">
+                Nikita is a wonderful person, great to work with, always puts her 100% effort into working and a great team player.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./img/mueed.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Mu'eed Brown</h5>
+              <p class="card-text">
+                Nikita is a great person to work with. Her creative mind can get you some of the best results on web development.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./img/aneqa.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Aneeqa Brown</h5>
+              <p class="card-text">
+                Nikita is a highly thought intellectual from my perspective. She is not only hardworking but ambitious to recreate her vision exactly as thought of.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./img/xolelwa.jpg" class="card-img-top" alt="Xo" />
+            <div class="card-body">
+              <h5 class="card-title">Xolelwa Manqina</h5>
+              <p class="card-text">
+                She exhibits exceptional creativity and determination. She has a efficient work ethic and always produces sophisticated projects to the best of her ability. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./img/zoe.jpg" class="card-img-top" alt="Xo" />
+            <div class="card-body">
+              <h5 class="card-title">Zoe Daniels</h5>
+              <p class="card-text">
+                Nikita is a hard working lady with a big heart. She is organised, efficient and extremely competent with excellent rapport with people of all ages. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <footer>
+    
+      <div class="f-item-con">
+          <div class="app-info">
+              <span class='app-name'>
+              |  <span class='app-initial'>R</span>amawoothar.org
+              </span>
+              <p>We will provide you with <strong>Well organised</strong> and <strong>SEO friendly</strong> Website Designs.</p>
+          </div>
+          <div class="useful-links">
+              <div class="footer-title">| Useful Links</div>
+              <ul>
+                  <li>Courses</li>
+                  <li>Sign In</li>
+                  <li>About Us</li>
+                  <li>Become an Affiliate</li>
+                  <li>Advertise with Us</li>
+                  <li>Terms and Conditions</li>
+              </ul>
+          </div>
+          <div class="help-sec">
+              <div class="footer-title">| Help</div>
+              <ul>
+                  <li>Help Me</li>
+                  <li>Feedback</li>
+                  <li>Report a Issue / Bug</li>
+              </ul>
+          </div>
+          <div class="g-i-t">
+              <div class="footer-title">| Get in Touch</div>
+              <form action="/" method="post" class="space-y-2">
+                  <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Name' />
+                  <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Email' />
+                  <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg"
+                      placeholder='Message...'></textarea>
+                  <button type="submit" class='f-btn'>Submit</button>
+              </form>
+          </div>
+      </div>
+      <div class='cr-con'>Copyright &copy; 2022 | Made by Nikita Ramawoothar</div>
+
+  </footer>
 <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -104,13 +558,5 @@
       crossorigin="anonymous"
 ></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-    var typed = new Typed(".word", {
-        strings: ["I am Nikita Ramawoothar"],
-        typeSpeed: 150,
-        backSpeed: 1,
-        loop: false
-    })
-</script>
 </body>
 </html>
