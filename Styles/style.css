@@ -179,7 +179,7 @@ ul li:hover {
     margin-top: -140px;
     display:inline-block;
     width: 600px;
-    height: 440px;
+    height: 460px;
     border-radius: 20px;
 }
 
@@ -190,9 +190,11 @@ ul li:hover {
     padding-top: 20px;
 }
 
-.aboutMe, h1 {
+.aboutMe h1 {
     font-size: 40px;
     font-family: 'Space Mono', monospace;
+    border-bottom: 2px solid lime;
+    color: violet;
 }
 
 .aboutMe img {
@@ -202,6 +204,25 @@ ul li:hover {
     height: 300px;
     border-radius: 200px; 
     border: 3px solid lime;
+}
+
+#aboutMe {
+    margin: 0px;
+    margin-left: 590px;
+    margin-top: -200vh;
+    margin-bottom: 500px;
+    padding-top: -100px;
+    width: 310px;
+    height: 400px;
+
+}
+
+#aboutMe h4 {
+    color:#877666;
+}
+
+#aboutMe p {
+    font-size: 20px;
 }
 
 .hobbies {
@@ -259,7 +280,7 @@ ul li:hover {
   
   .flip-card-back {
     background-color: black;
-    color: rgb(238, 105, 238);
+    color: violet;
     transform: rotateY(180deg);
     height: 300px;
     padding: 10px;
@@ -445,12 +466,16 @@ ul li:hover {
 }
 #skills .row {
     margin: 0;
-    margin-left: -50px;
+    margin-left: -90px;
     margin-right: -20px;
     flex-wrap: nowrap;
     align-content: space-between;
     justify-content: center;
     align-items: flex-start;
+}
+
+#skills h3 {
+    
 }
 
 #skills #skillCard {
@@ -469,8 +494,7 @@ ul li:hover {
 }
 
 #testimonials .card-title {
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
