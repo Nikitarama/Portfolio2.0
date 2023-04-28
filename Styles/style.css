@@ -12,6 +12,10 @@ body {
     background-attachment: fixed;
 }
 
+h1 {
+    padding-left: 10px;
+}
+
 a {
     text-decoration: none;
 }
@@ -32,7 +36,7 @@ a {
     margin:1px;
     padding:0;
     position: fixed;
-    width:100%;
+    
     box-sizing: border-box;
     background-color: black;
     width: 1364px;
@@ -70,10 +74,11 @@ a {
 } 
 
 .social-icons ul {
+    position: relative;
     margin:10px;
-    padding:100px;
-    margin-bottom: -210px;
-    margin-left: 220px;
+    padding:10px;
+    top: 120px;
+    left: 310px;
 }
 
 .social-icons ul li {
@@ -89,9 +94,8 @@ a {
     background: rgba(0,0,0,0.5);
     line-height:50px;
     border-radius: 10%;
-    /*space between icons*/
     margin:10px;
-    
+    top: 5rem;
     cursor:pointer;
 }
 
@@ -99,7 +103,7 @@ a {
     margin:0;
     padding:0;
     position:relative;
-    top:0;
+    top:10rem;
     left:0;
     text-align: center;
     border-radius:50%;
@@ -121,6 +125,9 @@ ul li:nth-child(3):before {
 }
 
 ul li:nth-child(4):before {
+    background:rgba(0,0,0,0.5);
+}
+ul li:nth-child(5):before {
     background:rgba(0,0,0,0.5);
 }
 
@@ -146,51 +153,59 @@ ul li:hover {
 .social-icons ul li:nth-child(1):hover {
     
     color:rgb(78, 211, 255);
-    box-shadow: 0 0 10px rgb(78, 211, 255);
-    text-shadow: 0 0 5px rgb(78, 211, 255);
+    box-shadow: 0 0 20px 5px rgb(78, 211, 255);
+    text-shadow: 0 0 10px rgb(78, 211, 255);
     background-color: black;
 }
 
 .social-icons ul li:nth-child(2):hover {
     color:blue;
-    box-shadow: 0 0 10px blue;
-    text-shadow: 0 0 5px blue;
+    box-shadow: 0 0 20px 5px blue;
+    text-shadow: 0 0 10px blue;
     background-color: black;
 }
 
 .social-icons ul li:nth-child(3):hover {
-    color:rgb(245, 119, 188);
-    box-shadow: 0 0 10px rgb(245, 119, 188);
-    text-shadow: 0 0 5px rgb(245, 119, 188);
+    color:rgb(253, 32, 154);
+    box-shadow: 0 0 20px 11px rgb(252, 48, 160);
+    text-shadow: 0 0 10px rgb(252, 48, 160);
     background-color: black;
 }
 
 .social-icons ul li:nth-child(4):hover {
     color:rgb(184, 3, 184);
-    box-shadow: 0 0 10px rgb(184, 3, 184);
-    text-shadow: 0 0 5px rgb(184, 3, 184);
+    box-shadow: 0 0 20px 8px rgb(184, 3, 184);
+    text-shadow: 0 0 10px rgb(184, 3, 184);
+    background-color: black;
+}
+.social-icons ul li:nth-child(5):hover {
+    color:rgb(184, 3, 3);
+    box-shadow: 0 0 20px 8px rgb(184, 3, 3);
+    text-shadow: 0 0 10px rgb(184, 3, 3);
     background-color: black;
 }
 
 
 .aboutMe {
+    position: relative;
     padding: 30px;
-    margin-left: 25rem;
-    margin-top: -140px;
+    left: 25rem;
+    bottom: 200px;
     display:inline-block;
     width: 600px;
     height: 460px;
     border-radius: 20px;
+    margin-bottom: 23rem;
 }
 
-.aboutMe, h1, h3 {
+.aboutMe, .about, h1, h3 {
     color: lime;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.842);
     font-family: 'Space Mono', monospace;
     padding-top: 20px;
 }
 
-.aboutMe h1 {
+.aboutMe h1, .about h1 {
     font-size: 40px;
     font-family: 'Space Mono', monospace;
     border-bottom: 2px solid lime;
@@ -207,14 +222,12 @@ ul li:hover {
 }
 
 #aboutMe {
+    position: relative;
     margin: 0px;
-    margin-left: 590px;
-    margin-top: -200vh;
-    margin-bottom: 500px;
-    padding-top: -100px;
+    bottom: 3.5rem;
     width: 310px;
-    height: 400px;
-
+    height: 650px;
+    
 }
 
 #aboutMe h4 {
@@ -226,20 +239,20 @@ ul li:hover {
 }
 
 .hobbies {
-    margin-top: 120px;
-    height: 100vh;
+    margin-top: -520px;
+    height: 120vh;
 }
 
 .hobbies .row {
+    position: relative;
     margin-top: 80px;
-    margin-left: 10rem;
-    
+    left: 3rem;
 }
   
 .flip-card {
     padding: 0;
-    margin: 30px;
-    margin-left: 10px;
+    margin-top: 80px;
+    margin-left: 20px;
     font-family: 'Space Mono', monospace;
     background-color: transparent;
     width: 300px;
@@ -291,26 +304,10 @@ ul li:hover {
     padding: 5px;
   }
 
-#projects {
-    background: rgba(0, 0, 0, 0.7);
-    margin-bottom: -60px;
-}
-
-.carousel {
-   
-    margin: 150px;
-    display: inline-block;
-    width: 1000px;
-    height: 500px;
-}
-
-.carousel h5 {
-    margin-top: 40px;
-}
-
- #modal{
-    margin-bottom: -200px;
-    width: 150px;
+  
+  #modal{
+      margin-bottom: -200px;
+      width: 150px;
     margin-left: -700px; 
     font-weight: bold;
     height: 70px;
@@ -322,6 +319,28 @@ ul li:hover {
     font-family: 'Space Mono', monospace;
     
 }
+    
+#projects .card-body {
+    background: rgba(0, 0, 0, 0.9);
+    margin-bottom: -60px;
+    color: white;
+    width: 25rem;
+    position: relative;
+    left: 1rem;
+    border-radius: 10px;
+    border: 3px solid lime;
+    
+}
+
+#projects .img-fluid {
+    border-radius: 10px;
+    border-bottom: 3px solid lime;
+}
+
+#projects .card-text {
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
 
 #exampleInputText1 {
     margin: 0;
@@ -330,41 +349,32 @@ ul li:hover {
 }
 
 
-.carousel-indicators button {
-    margin-bottom: 4px;
-    margin-left: 100px;
-    
-}
-
-
 .calculator {
     margin: 100px;
     padding:30px;
-    background: linear-gradient(to left, pink, salmon);
+    background: linear-gradient(to left, salmon, rgb(214, 11, 214));
     box-shadow: 0 0 20px black;
     justify-content: center;
     width: 400px;
-    border-radius: 50px;
+    border-radius: 20px;
     font-family: 'VT323', monospace;
     font-weight: bold;
 } 
 
 .calculator button:hover {
-    background-color: palevioletred;
-    border-top: 1px solid palevioletred;
-    border-left: 1px solid palevioletred;
-    border-bottom: 1px solid palevioletred;
-    border-right: 1px solid palevioletred;
-    box-shadow: 0 0 5px black;
+    background-color: rgb(248, 224, 11);
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px black;
     transition: 0.3s ease-in-out;
     color:white;
 }
 
 .calculator button{
-    border-radius: 60px;
+    border-radius: 10px;
     height: 50px;
     width: 50px;
-    border: 1px solid white;
+    background-color: rgb(12, 245, 12);
+    border: 1px solid lime;
     font-weight: bold;
 }
 
@@ -376,7 +386,7 @@ ul li:hover {
 }
 
 #btn:hover {
-    background-color: salmon;
+    background-color: rgb(253, 27, 2);
 }
 
 .output {
@@ -444,53 +454,50 @@ ul li:hover {
     
 }
 
-#bootstrap-logo {
-    margin: 10px;
-    margin-left: -30px;
-    
-}
-
 #bootstrap-logo h3 {
-    margin-left: 30px;
+    position: relative;
+    left: 30px;
 }
 
 #skills {
-    margin: 0px;
+    position: relative;
+    height: 230vh; /*Changes section length*/
     background: rgba(0,0,0,0.7);
     
+}
+
+#skills title {
+    margin-bottom: 1rem;
 }
 
 #skills .col-md-6 {
     border:#9DB5B2;
 
 }
+
 #skills .row {
     margin: 0;
     margin-left: -90px;
     margin-right: -20px;
     flex-wrap: nowrap;
-    align-content: space-between;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-center;
 }
 
-#skills h3 {
-    
+#testimonials .card {
+    position: relative;
+    right: 2rem;
 }
-
-#skills #skillCard {
-    
-    background:rgba(0, 0, 0, 0.0);
-    border:px solid #fff;
-   justify-content: space-around;
-   
-}
-
 #testimonials .card img {
     width:150px;
-    height:400px;
+    
     overflow:hidden;
     border-radius: 3px;
+}
+
+#testimonials {
+    
+    margin-top: 0rem;
 }
 
 #testimonials .card-title {
