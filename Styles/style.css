@@ -190,30 +190,38 @@ ul li:hover {
     position: relative;
     padding: 30px;
     left: 25rem;
-    bottom: 200px;
+    bottom: 230px;
     display:inline-block;
     width: 600px;
-    height: 460px;
+    height: 470px;
     border-radius: 20px;
-    margin-bottom: 23rem;
+    margin-bottom: 25rem;
+    
+}
+
+.aboutMe h4 {
+    font-size: 16px;
+}
+
+.aboutMe h1 {
+    font-family: 'Press Start 2P', cursive;
 }
 
 .aboutMe, .about, h1, h3 {
     color: lime;
     background: rgba(0, 0, 0, 0.842);
-    font-family: 'Space Mono', monospace;
+    font-family: 'Press Start 2P', cursive;
     padding-top: 20px;
 }
 
 .aboutMe h1, .about h1 {
-    font-size: 40px;
-    font-family: 'Space Mono', monospace;
+    font-size: 22px;
+    font-family: 'Press Start 2P', cursive;
     border-bottom: 2px solid lime;
     color: violet;
 }
 
 .aboutMe img {
-   
     margin-left: 130px;
     width: 300px;
     height: 300px;
@@ -221,13 +229,29 @@ ul li:hover {
     border: 3px solid lime;
 }
 
+.port {
+    color: lime;
+    background: rgba(0, 0, 0, 0.842);
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+    text-decoration: none;
+}
+
+.port:hover {
+    background-color: lime;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px lime;
+    
+}
+
 #aboutMe {
     position: relative;
     margin: 0px;
-    bottom: 3.5rem;
+    bottom: 4rem;
     width: 310px;
-    height: 650px;
-    
+    height: 740px;
+    border-radius: 10px;
 }
 
 #aboutMe h4 {
@@ -235,8 +259,18 @@ ul li:hover {
 }
 
 #aboutMe p {
-    font-size: 20px;
+    font-size: 15px;
 }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 
 .hobbies {
     margin-top: -520px;
@@ -323,13 +357,15 @@ ul li:hover {
 #projects .card-body {
     background: rgba(0, 0, 0, 0.9);
     margin-bottom: -60px;
-    color: white;
     width: 25rem;
     position: relative;
     left: 1rem;
     border-radius: 10px;
     border: 3px solid lime;
-    
+    font-family: 'Space Mono', monospace;
+    color: #9DB5B2;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
 #projects .img-fluid {
@@ -339,7 +375,8 @@ ul li:hover {
 
 #projects .card-text {
     padding: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
 } 
 
 #exampleInputText1 {
@@ -350,7 +387,8 @@ ul li:hover {
 
 
 .calculator {
-    margin: 100px;
+    margin: 50px;
+    margin-bottom: 1rem;
     padding:30px;
     background: linear-gradient(to left, salmon, rgb(214, 11, 214));
     box-shadow: 0 0 20px black;
@@ -364,8 +402,8 @@ ul li:hover {
 .calculator button:hover {
     background-color: rgb(248, 224, 11);
     border: 2px solid yellow;
-    box-shadow: 0 0 10px black;
-    transition: 0.3s ease-in-out;
+    
+    transition: 0.1s ease-in-out;
     color:white;
 }
 
@@ -386,7 +424,8 @@ ul li:hover {
 }
 
 #btn:hover {
-    background-color: rgb(253, 27, 2);
+    background-color: rgba(255, 3, 3, 0.842);
+    border: 4px solid rgb(255, 0, 34);
 }
 
 .output {
@@ -415,17 +454,16 @@ ul li:hover {
 #education {
     margin:0;
     padding:0;
-    display: inline-flexbox;
-    align-items: flex-start;
+    position:relative;
+    margin-bottom : 2rem;
     gap:50px;
     font-family: 'VT323', monospace;
 }
 
 #education p {
-    border:px solid black;
     color: #fff;
     width:300px;
-    height: 150px;
+    height: 130px;
 }
 
 
@@ -434,7 +472,7 @@ ul li:hover {
     margin-left: 65px;
     background: rgba(0, 0, 0, 0.7);
     width: 350px;
-    height:400px;
+    height:370px;
 }
 
 
@@ -448,10 +486,8 @@ ul li:hover {
 
 #education h2 {
     margin:0 ;
-    border-bottom: px solid #877666;
     color: #666;
     font-weight: bold;
-    
 }
 
 #bootstrap-logo h3 {
@@ -461,7 +497,7 @@ ul li:hover {
 
 #skills {
     position: relative;
-    height: 230vh; /*Changes section length*/
+    height: 210vh; /*Changes section length*/
     background: rgba(0,0,0,0.7);
     
 }
@@ -589,7 +625,7 @@ form .g-inp{
     height: 150px;
 }
 
- -btn .useful-links{
+  .useful-links{
     padding: .25rem 1rem;
     background-color: var(--theme-col);
     border-radius: .25rem;

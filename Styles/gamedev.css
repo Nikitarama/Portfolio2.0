@@ -1,0 +1,15 @@
+.head {
+    background-image: url(https://i.postimg.cc/wBMvq627/ivan-rudoy-H1-Cz-Gh-Dh-SAY-unsplash.jpg);
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Press Start 2P', cursive;
+    height: 200vh;
+}
+
+.tophead {
+    width: 54rem;
+    position: relative;
+    top: 1rem;
+    left:1rem;
+}
