@@ -369,8 +369,9 @@ ul li:hover {
 }
 
 #projects .img-fluid {
+    margin-bottom: 10px;
     border-radius: 10px;
-    border-bottom: 3px solid lime;
+    border-bottom: 0px solid lime;
 }
 
 #projects .card-text {
