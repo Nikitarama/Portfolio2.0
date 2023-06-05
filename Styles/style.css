@@ -145,7 +145,7 @@ ul li:hover:before {
 }
 
 ul li:hover {
-    translate:calc(50% 50%);
+    /* translate:calc(50% 50%); */
     transform:scale(1.1);
     
 }
@@ -234,6 +234,7 @@ ul li:hover {
     background: rgba(0, 0, 0, 0.842);
     position: relative;
     top: 4rem;
+    margin-bottom: 10px;
     left: 2rem;
     text-decoration: none;
 }
@@ -369,7 +370,7 @@ ul li:hover {
 }
 
 #projects .img-fluid {
-    margin-bottom: 10px;
+    margin-bottom: 10pxC;
     border-radius: 10px;
     border-bottom: 0px solid lime;
 }
@@ -577,7 +578,7 @@ footer .footer-title{
     color: white;
     border-left: 4px solid var(--theme-col);
     padding-left: 1.5rem;
-    height: fit-content;
+    /* height: fit-content; */
 }
 .useful-links ul{ 
     padding-left: 0.75rem;
@@ -590,7 +591,7 @@ footer .footer-title{
     margin: .2rem 0;
     cursor: pointer;
     color: #d4d4d4;
-    width: fit-content;
+    /* width: fit-content; */
 }
 .useful-links ul li:hover{
     color: white;

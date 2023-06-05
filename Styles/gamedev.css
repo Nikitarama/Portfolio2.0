@@ -1,15 +1,39 @@
+
 .head {
-    background-image: url(https://i.postimg.cc/wBMvq627/ivan-rudoy-H1-Cz-Gh-Dh-SAY-unsplash.jpg);
-    color: aliceblue;
+    background-image: url(https://i.postimg.cc/VLdWd2kt/613821065c1ba49a2273f6b31b405ac8.jpg);
+    color: rgb(250, 250, 250);
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: 'Press Start 2P', cursive;
-    height: 200vh;
+    height: 250vh;
+    background-color: rgb(54, 134, 134);
+}
+
+.head .topnav a {
+    position: relative;
+    left:36rem;
+    top: 1rem;
+    text-decoration: none;
+    color: yellow;
+    padding: 2rem;
+}
+
+.head .topnav a:hover {
+    color:aquamarine;
 }
 
 .tophead {
-    width: 54rem;
     position: relative;
-    top: 1rem;
+    top: 4rem;
     left:1rem;
+    padding: 1rem;
+    width: 54rem;
+    background-color: rgba(9, 165, 168, 0.527);
+    height: 20rem;
+}
+
+.tophead p {
+    width: 25rem;
+    position: relative;
+    top: 3rem;
 }

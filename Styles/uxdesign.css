@@ -1,0 +1,70 @@
+ html a {
+    position: relative;
+    left:36rem;
+    top: 1rem;
+    text-decoration: none;
+    color: rgb(247, 255, 8);
+    font-size: 1.1rem;
+    font-family: 'Press Start 2P', cursive;
+    padding-left: 3rem;
+    
+}
+
+body {
+    background-image: url(https://i.postimg.cc/4dDpDxpQ/6e9ae78bcd95aaa72b26f8846dc60eb2.jpg);
+    background-size: cover;
+    height: 260vh;
+    width: 70rem;
+    background-repeat: no-repeat;
+}
+
+.tophead {
+    position: relative;
+    top: 3rem;
+    left:23rem;
+    padding: 1rem;
+    width: 50rem;
+    background-color: rgba(9, 165, 168, 0.527);
+    height: 31rem;
+    font-family: 'Press Start 2P', cursive;
+    color: whitesmoke;
+}
+
+.tophead p {
+    padding-bottom: 1rem;
+    position: relative;
+    top: 4rem;
+}
+
+.content img {
+    position: relative;
+    top: 5rem;
+    left: 1.5rem;
+    height: 30rem;
+    width: 50rem;
+    margin-bottom: 2rem;
+}
+
+.content .body {
+    position: relative;
+    top: 14rem;
+    left: 22rem;
+    background-color: aliceblue;
+    height: 8.5rem;
+    padding: 0.4rem;
+    width: 22rem;
+    padding: 1rem;
+    box-shadow: 0 0 6px 1px rgba(68, 68, 68, 0.862);
+    border-radius: 10px;
+}
+
+.fig-website {
+    position: relative;
+    left: 13rem;
+}
+
+.fig-website .body {
+    position: relative;
+    left: 0rem;
+}
+
