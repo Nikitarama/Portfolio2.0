@@ -233,8 +233,9 @@ ul li:hover {
     color: lime;
     background: rgba(0, 0, 0, 0.842);
     position: relative;
-    top: 4rem;
+    top: 3rem;
     margin-bottom: 10px;
+    
     left: 2rem;
     text-decoration: none;
 }
