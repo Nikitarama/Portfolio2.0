@@ -65,6 +65,11 @@ body {
 
 .fig-website .body {
     position: relative;
-    left: 0rem;
+    left: -7rem;
+}
+
+.color-theory {
+    position: relative;
+    right: 4rem;
 }
 

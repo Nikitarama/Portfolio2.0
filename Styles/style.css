@@ -276,12 +276,12 @@ ul li:hover {
 
 .hobbies {
     margin-top: -520px;
-    height: 120vh;
+    height: 135vh;
 }
 
 .hobbies .row {
     position: relative;
-    margin-top: 80px;
+    margin-top: 90px;
     left: 3rem;
 }
   
@@ -359,10 +359,11 @@ ul li:hover {
 #projects .card-body {
     background: rgba(0, 0, 0, 0.9);
     margin-bottom: -60px;
+
     width: 25rem;
     position: relative;
     left: 1rem;
-    border-radius: 10px;
+    border-radius: 0px;
     border: 3px solid lime;
     font-family: 'Space Mono', monospace;
     color: #9DB5B2;
@@ -372,8 +373,13 @@ ul li:hover {
 
 #projects .img-fluid {
     margin-bottom: 10pxC;
-    border-radius: 10px;
+    
+    border-radius: 0px;
     border-bottom: 0px solid lime;
+}
+
+.card-title {
+    margin:10px;
 }
 
 #projects .card-text {
@@ -495,12 +501,12 @@ ul li:hover {
 
 #bootstrap-logo h3 {
     position: relative;
-    left: 30px;
+    left: 60px;
 }
 
 #skills {
     position: relative;
-    height: 210vh; /*Changes section length*/
+    height: 230vh; /*Changes section length*/
     background: rgba(0,0,0,0.7);
     
 }
