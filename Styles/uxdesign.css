@@ -21,7 +21,7 @@ body {
 .tophead {
     position: relative;
     top: 3rem;
-    left:23rem;
+    left:19rem;
     padding: 1rem;
     width: 50rem;
     background-color: rgba(9, 165, 168, 0.527);
@@ -71,5 +71,9 @@ body {
 .color-theory {
     position: relative;
     right: 4rem;
+}
+
+.body p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 

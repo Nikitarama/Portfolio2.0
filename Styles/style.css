@@ -364,7 +364,7 @@ ul li:hover {
     position: relative;
     left: 1rem;
     border-radius: 0px;
-    border: 3px solid lime;
+    border: 1px solid lime;
     font-family: 'Space Mono', monospace;
     color: #9DB5B2;
     font-size: 15px;
