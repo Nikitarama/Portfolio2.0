@@ -506,7 +506,7 @@ ul li:hover {
 
 #skills {
     position: relative;
-    height: 230vh; /*Changes section length*/
+    height: 250vh; /*Changes section length*/
     background: rgba(0,0,0,0.7);
     
 }
@@ -556,6 +556,7 @@ ul li:hover {
 }
 footer{
     background-color: #111010;
+    margin-bottom: -2rem;
 }
 .f-item-con{
     padding: 1.5rem 4rem;
