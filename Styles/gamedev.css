@@ -1,11 +1,11 @@
 
 .head {
-    background-image: url(https://i.postimg.cc/VLdWd2kt/613821065c1ba49a2273f6b31b405ac8.jpg);
+    background-image: url(https://i.postimg.cc/C1c7c13q/yk1r4avg0cv81.webp);
     color: rgb(250, 250, 250);
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: 'Press Start 2P', cursive;
-    height: 300vh;
+    height: 360vh;
     background-color: rgb(20, 26, 26);
 }
 
@@ -33,20 +33,21 @@
 }
 
 .tophead p {
-    width: 45rem;
+    width: 46rem;
     position: relative;
     top: 3rem;
 }
 
 .progs {
     position: relative;
-    left: 55rem;
-    bottom: 15rem;
+    left: 57rem;
+    bottom: -2rem;
 }
 
 .gun {
     position: relative;
-    bottom: 8rem;
+    bottom: 10rem;
+    width: 40rem;
 }
 
 .projects {
