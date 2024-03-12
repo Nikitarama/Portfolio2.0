@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url(https://i.postimg.cc/4dDpDxpQ/6e9ae78bcd95aaa72b26f8846dc60eb2.jpg);
+    background-image: url(https://i.postimg.cc/fTSTbsFD/4bc38124ce3be00a702170b459a2a410.jpg);
     background-size: cover;
     height: 260vh;
     width: 70rem;
@@ -40,7 +40,7 @@ body {
     position: relative;
     top: 5rem;
     left: 1.5rem;
-    height: 30rem;
+    height: 20rem;
     width: 50rem;
     margin-bottom: 2rem;
 }
@@ -71,6 +71,11 @@ body {
 .color-theory {
     position: relative;
     right: 4rem;
+}
+
+.color-theory img {
+    width: 50rem;
+    height: 30rem;
 }
 
 .body p {
