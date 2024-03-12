@@ -11,9 +11,9 @@
 }
 
 body {
-    background-image: url(https://i.postimg.cc/fTSTbsFD/4bc38124ce3be00a702170b459a2a410.jpg);
+    background-image: url(https://i.postimg.cc/SR2Y6vS9/758782d8ad0daf0687054d15025d99d6.gif);
     background-size: cover;
-    height: 260vh;
+    height: 300vh;
     width: 70rem;
     background-repeat: no-repeat;
 }
@@ -87,6 +87,6 @@ body {
     width: 30rem;
     height: 23rem;
     position: relative;
-    left: 35rem;
+    left: 30rem;
 }
 
